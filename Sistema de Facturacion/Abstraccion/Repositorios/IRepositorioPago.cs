@@ -7,8 +7,8 @@ namespace Sistema_de_Facturacion.Abstraccion.Repositorios
     {
         List<Pago> GetPagos();
         Pago GetById(int id);
-        Pago Create(PagoDTO crearpagoDTO);
-        Pago Update(PagoDTO actualizarPagoDTO);
+        Pago Create(CrearPagoDTO crearpagoDTO);
+        Pago Update(int id,ActualizarPagoDTO actualizarPagoDTO);
         void Delete(int id);
     }
 }

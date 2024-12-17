@@ -7,8 +7,8 @@ namespace Sistema_de_Facturacion.Abstraccion.Servicios
     {
         List<ProductoDTO> GetProductos();
         Producto GetById(int id);
-        ProductoDTO Create(ProductoDTO CrearproductoDTO);
-        ProductoDTO Update(ProductoDTO actualizarproductoDTO);
+        ProductoDTO Create(CrearProductoDTO CrearproductoDTO);
+        ProductoDTO Update(int id,ActualizarProductoDTO actualizarproductoDTO);
         void Delete(int id);
     }
 }

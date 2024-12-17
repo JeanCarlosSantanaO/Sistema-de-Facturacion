@@ -7,8 +7,8 @@ namespace Sistema_de_Facturacion.Abstraccion.Repositorios
     {
         List<Factura> GetFacturas();
         Factura GetById(int id);
-        Factura Create(FacturaDTO crearfacturaDTO);
-        Factura Update(FacturaDTO actualizarfacturaDTO);
+        Factura Create(CrearFacturaDTO crearfacturaDTO);
+        Factura Update(int id,ActualizarFacturaDTO actualizarfacturaDTO);
         void Delete(int id);
     }
 }

@@ -7,8 +7,8 @@ namespace Sistema_de_Facturacion.Abstraccion.Servicios
     {
         List<DetalleFacturaDTO> GetDetalleFactura();
         DetalleFactura GetById(int id);
-        DetalleFacturaDTO Create(DetalleFacturaDTO creardetalleFacturaDTO);
-        DetalleFacturaDTO Update(DetalleFacturaDTO actualizardetalleFacturaDTO);
+        DetalleFacturaDTO Create(CrearDetalleFacturaDTO creardetalleFacturaDTO);
+        DetalleFacturaDTO Update(int id,ActualizarDetalleFacturaDTO actualizardetalleFacturaDTO);
         void Delete(int id);
     }
 }

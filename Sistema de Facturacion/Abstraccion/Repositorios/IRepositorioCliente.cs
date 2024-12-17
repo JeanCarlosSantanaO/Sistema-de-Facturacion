@@ -8,7 +8,8 @@ namespace Sistema_de_Facturacion.Abstraccion.Repositorios
         List<Cliente> GetCliente();
         Cliente GetById(int id);
         Cliente Create(CrearClienteDTO crearClienteDTO);
-        Cliente Update(ActualizarClienteDTO actualizarClienteDTO);
+        Cliente Update(int id,ActualizarClienteDTO actualizarClienteDTO);
         void Delete(int id);
+      
     }
 }

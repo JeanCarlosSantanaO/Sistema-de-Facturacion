@@ -7,8 +7,8 @@ namespace Sistema_de_Facturacion.Abstraccion.Repositorios
     {
         List<Producto> GetProductos();
         Producto GetById(int id);
-        Producto Create(ProductoDTO crearproductoDTO);
-        Producto Update(ProductoDTO actualizarproductoDTO);
+        Producto Create(CrearProductoDTO crearproductoDTO);
+        Producto Update(int id,ActualizarProductoDTO actualizarproductoDTO);
         void Delete(int id);
     }
 }

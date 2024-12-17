@@ -7,8 +7,8 @@ namespace Sistema_de_Facturacion.Abstraccion.Servicios
     {
         List<ClienteDTO> GetClienteDTO();
         Cliente GetById(int id);
-        ClienteDTO Create(ClienteDTO createclienteDTO);
-        ClienteDTO Update(ClienteDTO ActualizarclienteDTO);
+        ClienteDTO Create(CrearClienteDTO createclienteDTO);
+        ClienteDTO Update(int id,ActualizarClienteDTO ActualizarclienteDTO);
         void Delete(int id);
     }
 }
