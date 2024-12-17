@@ -14,21 +14,36 @@ namespace Sistema_de_Facturacion.Implementaciones.Repositorios
         }
 
 
-        public DetalleFactura Create(DetalleFacturaDTO creardetalleFacturaDTO)
+        //public DetalleFactura Create(DetalleFacturaDTO creardetalleFacturaDTO)
+        //{
+        //    var Dfactura = new DetalleFactura
+        //    {
+        //        FacturaId=creardetalleFacturaDTO.FacturaId,
+        //        ProductoId=creardetalleFacturaDTO.ProductoId,
+        //        Cantidad=creardetalleFacturaDTO.Cantidad,
+        //        PrecioUnitario=creardetalleFacturaDTO.PrecioUnitario,
+        //        SubTotal=creardetalleFacturaDTO.SubTotal
+        //    };
+        //    _context.DetalleFacturas.Add(Dfactura);
+        //    _context.SaveChanges();
+        //    return Dfactura;
+        //}
+
+        public DetalleFactura Create(CrearDetalleFacturaDTO creardetalleFacturaDTO)
         {
             var Dfactura = new DetalleFactura
             {
-                FacturaId=creardetalleFacturaDTO.FacturaId,
-                ProductoId=creardetalleFacturaDTO.ProductoId,
-                Cantidad=creardetalleFacturaDTO.Cantidad,
-                PrecioUnitario=creardetalleFacturaDTO.PrecioUnitario,
-                SubTotal=creardetalleFacturaDTO.SubTotal
+                FacturaId = creardetalleFacturaDTO.FacturaId,
+                ProductoId = creardetalleFacturaDTO.ProductoId,
+                Cantidad = creardetalleFacturaDTO.Cantidad,
+                PrecioUnitario = creardetalleFacturaDTO.PrecioUnitario,
+                SubTotal = creardetalleFacturaDTO.SubTotal
             };
             _context.DetalleFacturas.Add(Dfactura);
             _context.SaveChanges();
             return Dfactura;
         }
-    
+
         public void Delete(int id)
         {
             DetalleFactura detalleFactura = GetById(id);
